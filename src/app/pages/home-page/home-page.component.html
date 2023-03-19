@@ -1,0 +1,56 @@
+<div class="home-page">
+    <div class="wrap-content">
+        <div>
+            <h1> {{'HONE.WIZEFI' | translate}} </h1>
+            <h2 [innerHTML]="'HOME.SLOGAN' | translate"> </h2>
+            <img class="img-leaves" src="assets/image/ic_leaves.svg" alt="">
+            <div class="home-page__btn-group">
+                <button class="btn-blue btn-learn-more" routerLink="/about-us"> {{'HONE.BTN_LEARN_MORE' | translate}}
+                </button>
+                <button class="btn-green btn-started"> {{'HOME.BTN_STARTED' | translate}} </button>
+            </div>
+        </div>
+        <div>
+            <img class="img-hand" src="assets/image/ic_picture-hand.svg" alt="">
+        </div>
+    </div>
+    <div class="wrap-content">
+        <div>
+            <img class="img-hand" src="assets/image/ic_esg.svg" alt="">
+        </div>
+        <div class="mr-5">
+            <h2> <span class="first-letter-color">ESG</span> Learning </h2>
+            <p [innerHTML]="'HOME.ESG_LEARNING_SUB' | translate"></p>
+            <div class="home-page__btn-group">
+                <button class="btn-blue btn-learn-more" routerLink="/esg-learning"> {{'HOME.LEARN_WITH_US' | translate}}
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="wrap-content">
+        <div>
+            <h2> <span class="first-letter-color">Finance</span> Learning </h2>
+            <p [innerHTML]="'HOME.FINANCE_SUB' | translate"></p>
+            <div class="home-page__btn-group">
+                <button class="btn-blue btn-learn-more" routerLink="/finance"> {{'HOME.BTN_EXPLORE_WITH_US' |
+                    translate}} </button>
+            </div>
+        </div>
+        <div>
+            <img class="img-hand" src="assets/image/ic_Finance_picture.png" alt="">
+        </div>
+    </div>
+    <div class="wrap-content">
+        <div>
+            <img class="img-hand" src="assets/image/ic_company.svg" alt="">
+        </div>
+        <div>
+            <h2> <span class="first-letter-color">ESG</span> Companies </h2>
+            <p [innerHTML]="'HOME.ESG_COMPANY_SUB' | translate"></p>
+            <div class="home-page__btn-group">
+                <button class="btn-blue btn-learn-more" routerLink="/companies"> {{'HOME.BTN_CHECK_OUT_LIST' |
+                    translate}} </button>
+            </div>
+        </div>
+    </div>
+</div>

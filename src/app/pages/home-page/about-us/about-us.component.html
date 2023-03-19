@@ -1,0 +1,31 @@
+<div class="about-us-page">
+    <div class="about-us-page__wizefi">
+        <h3> What is WizeFI? </h3>
+        <hr class="line">
+        <div class="about-us-page__wizefi--sub">
+            <p><span class="first-text">WizeFi</span> is a comprehensive financial platform that promotes ESG investing
+                to
+                <b><i>retail investors</i></b>
+                through
+            </p>
+            <ul>
+                <li>Democratizing essential knowledge (including fundamental concepts of ESG investing and finance)</li>
+                <li>Centralizing applicable company data (including financial metrics and ESG-related information).</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="about-us-page__our-purpose">
+        <h3> Our Purpose </h3>
+        <hr class="line">
+        <p class="about-us-page__our-purpose--purpose">Raising retail investors' presence in the ESG financial market
+        </p>
+        <div *ngFor="let ourPurpose of ourPurposes, index as i" class="about-us-page__our-purpose--list-purpose">
+            <p class="index-list-purpose"> {{i+1}} </p>
+            <div>
+                <h4> {{ourPurpose.purpose}} </h4>
+                <p class="purpose-description"> <i>{{ourPurpose.description}}</i> </p>
+            </div>
+        </div>
+    </div>
+</div>

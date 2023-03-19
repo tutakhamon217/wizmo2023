@@ -1,0 +1,21 @@
+.esg-learning-page {
+  margin: 110px 120px 0 120px;
+  img {
+    width: 550px;
+  }
+  &__principles {
+    &--sub {
+      display: flex;
+      justify-content: space-between;
+      gap: 30px;
+    }
+    &--sub p {
+      color: #132f3a;
+      font-size: 25px;
+    }
+  }
+  &__environment,
+  &__investing {
+    margin-top: 30px;
+  }
+}

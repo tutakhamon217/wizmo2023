@@ -1,0 +1,70 @@
+<div class="finance-page">
+    <div class="finance-page__net-income finance-page--margin">
+        <h4> {{'FINANCE.NET_INCOME' | translate}} </h4>
+        <hr class="line">
+        <p [innerHTML]="'FINANCE.NET_INCOME_SUB' | translate"></p>
+
+        <p [innerHTML]="'FINANCE.NET_INCONE_SUB_2' | translate"></p>
+        <span>Growth = </span>
+
+        <div class="frac">
+            <span>Net Income<sub>n</sub> - Net Income<sub>n-1</sub></span>
+            <span class="symbol">/</span>
+            <span class="bottom">Net Income<sub>n-1</sub></span>
+        </div>
+        <br><br>
+        <div> {{'FINANCE.NET_INCONE_SUB_3' | translate}} </div>
+        <p>120 - 100 = 20(million)</p>
+        <p> {{'FINANCE.NET_INCONE_SUB_4' | translate}} </p>
+        <div class="frac">
+            <span>20 - 15</span>
+            <span class="symbol">/</span>
+            <span class="bottom">15</span>
+        </div>
+        <span> = 33%</span>
+    </div>
+
+    <div class="finance-page__net-margin finance-page--margin">
+        <h4> {{'NET MARGIN' | translate}} </h4>
+        <hr class="line">
+        <p [innerHTML]="'FINANCE.NET_MARGIN_SUB' | translate"></p>
+        <p [innerHTML]="'FINANCE.NET_MARGIN_SUB_ 1' | translate"> </p>
+        <span>Net Margin = </span>
+        <div class="frac">
+            <span>Net Income</span>
+            <span class="symbol">/</span>
+            <span class="bottom">Revenue</span>
+        </div>
+        <br><br>
+        <p> {{'FINANCE.NET_MARGIN_SUB_ 2' | translate}} </p>
+        <div class="frac">
+            <span>20</span>
+            <span class="symbol">/</span>
+            <span class="bottom">120</span>
+        </div>
+        <span> = 17%</span>
+    </div>
+
+    <div class="finance-page__return finance-page--margin">
+        <h4> {{'FINANCE.RETURN' | translate}} </h4>
+        <hr class="line">
+        <p [innerHTML]="'FINANCE.RETURN_SUB' | translate"></p>
+        <p> {{'FINANCE.RETURN_SUB_1' | translate}} </p>
+        <p [innerHTML]="'FINANCE.RETURN_SUB_2' |translate"></p>
+        <span>Return on Equity = </span>
+        <div class="frac">
+            <span>Net Profit</span>
+            <span class="symbol">/</span>
+            <span class="bottom">Total Equity</span>
+        </div>
+        <br><br>
+        <p> {{'FINANCE.RETURN_SUB_3' | translate}} </p>
+        <div class="frac">
+            <span>100</span>
+            <span class="symbol">/</span>
+            <span class="bottom">400</span>
+        </div>
+        <span> = 0.25</span>
+        <span> = 25%</span>
+    </div>
+</div>

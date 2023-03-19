@@ -1,0 +1,49 @@
+.about-us-page {
+  margin: 110px 120px 0 120px;
+  h3 {
+    color: #002f6c;
+  }
+  &__wizefi {
+    &--sub {
+      line-height: 2;
+    }
+    p,
+    ul {
+      color: #132f3a;
+      font-size: 30px;
+      font-weight: 700;
+    }
+    .first-text {
+      font-size: 35px;
+      font-weight: 800;
+      font-style: italic;
+    }
+  }
+
+  &__our-purpose {
+    margin-top: 150px;
+    color: #132f3a;
+    &--purpose {
+      font-weight: 300;
+      font-size: 50px;
+      color: #002f6c;
+      line-height: 65px;
+      margin-bottom: 40px;
+    }
+    &--list-purpose {
+      display: flex;
+      gap: 40px;
+      align-items: baseline;
+      .index-list-purpose {
+        background: #1c8b27;
+        border-radius: 50%;
+        padding: 4px 16px;
+        font-size: 25px;
+        color: #fff;
+      }
+      .purpose-description {
+        font-size: 22px;
+      }
+    }
+  }
+}

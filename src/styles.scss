@@ -1,0 +1,44 @@
+/* You can add global styles to this file, and also import other style files */
+@import "./assets/styles/font/font.scss";
+@import "./assets/styles/variables";
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background-image: url("../src/assets/image/background.jpg");
+  background-repeat: no-repeat;
+}
+
+.btn-blue,
+.btn-green {
+  border: #002f6c;
+  border-radius: 28px;
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  cursor: pointer;
+}
+
+.btn-blue {
+  background: #002f6c;
+}
+
+.btn-green {
+  background: #1c8b27;
+}
+
+.line {
+  border: #1c8b27 3px solid;
+}
+
+h3,
+h4 {
+  font-weight: 800;
+}
+
+h3 {
+  font-size: 35px;
+}
+
+h4 {
+  font-size: 30px;
+}

@@ -1,0 +1,16 @@
+<div class="header-app">
+    <img class="logo" routerLink="/" src="assets/image/ic_logo.svg" alt="">
+    <div *ngFor="let item of menuItems">
+        <div class="wrap-menu-item">
+            <a class="menu-item" [routerLink]="item.url" routerLinkActive="menu--active"
+                [routerLinkActiveOptions]="{exact: true}"><span class="menu-item--name">{{
+                    item.name | translate
+                    }}</span></a>
+        </div>
+    </div>
+    <img class="search" src="assets/image/ic_search.svg" alt="">
+    <div class="btn-group">
+        <button class="btn-blue"> {{'NAV.BTN_LOG_IN' | translate}} </button>
+        <button class="btn-green"> {{'NAV.BTN_SIGN_UP' | translate}} </button>
+    </div>
+</div>

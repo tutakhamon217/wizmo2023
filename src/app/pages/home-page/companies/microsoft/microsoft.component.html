@@ -1,0 +1,113 @@
+<div class="microspft-page">
+    <div class="microsoft-company">
+        <div>
+            <div class="microsoft-company--logo">
+                <img src="assets/image/ic_microsoft-logo.svg" alt="">
+                <div>
+                    <h3> {{'MICROSOFR.COMPANY_NAME'| translate}} </h3>
+                    <p class="company-name-sub"> {{'MICROSOFR.COMPANY_NAME_SUB' | translate}} </p>
+                </div>
+            </div>
+            <p class="price-tag">Price <span class="value">249.22 </span> <span class="percentage">-5.55 (-2.18%)</span>
+            </p>
+        </div>
+        <div></div>
+    </div>
+    <div class="microsoft-infomation">
+        <div class="financial-summary">
+            <div class="finance">
+                <h4>FINANCIAL SUMMARY <span class="in-thousands">($ in thousands)</span></h4>
+                <hr class="line">
+                <h4> {{'MICROSOFR.COMPANY_NAME_PROFITABILITY'| translate}} </h4>
+                <table class="table" (click)="redirectToFinanceLearning()">
+                    <tbody>
+                        <tr *ngFor="let profit of profitability">
+                            <td class="finance-info--name">{{profit.financeName}}</td>
+                            <td class="finance-info--value">{{profit.netIncome}}</td>
+                            <td class="finance-info--percentage">{{profit.netIncomePercentage}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h4> {{'MICROSOFR.COMPANY_NAME_ASSET_UTILIZATION' | translate}} </h4>
+                <table class="table" (click)="redirectToFinanceLearning()">
+                    <tbody>
+                        <tr *ngFor="let asset of assetUtilization">
+                            <td class="finance-info--name"> {{asset.assetName}} </td>
+                            <td class="finance-info--value"> {{asset.asset}} </td>
+                            <td class="finance-info--percentage"> {{asset.assetPercentage}} </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h4> {{'MICROSOFR.COMPANY_NAME_CAPITAL' | translate}} </h4>
+                <table class="table" (click)="redirectToFinanceLearning()">
+                    <tbody>
+                        <tr *ngFor="let capital of capitalStructure">
+                            <td class="finance-info--name"> {{capital.capitalName}} </td>
+                            <td class="finance-info--value"> {{capital.capital}} </td>
+                            <td class="finance-info--percentage"> {{capital.capitalPercentage}} </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h4> {{'MICROSOFR.COMPANY_NAME_VALUATION' | translate}} </h4>
+                <table class="table" (click)="redirectToFinanceLearning()">
+                    <tbody>
+                        <tr *ngFor="let valuation of valuations">
+                            <td class="finance-info--name"> {{valuation.valuationName}} </td>
+                            <td class="finance-info--value"> {{valuation.valuation}} </td>
+                            <td class="finance-info--percentage"> {{valuation.valuationPercentage}} </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="esg-summary">
+                <h4> {{'MICROSOFR.COMPANY_NAME_ESG_SUMMARY' | translate}} </h4>
+                <hr class="line">
+                <table class="table" (click)="redirectToESGLearning()">
+                    <tbody>
+                        <tr *ngFor="let esg of esgSummary">
+                            <td class="esg-name"> {{esg.esgName}} </td>
+                            <td class="esg"> {{esg.esg}} </td>
+                            <td class="esg-refinitiv"> {{esg.esgRefinitiv}} </td>
+                            <td class="esg-msci"> {{esg.esgMSCI}} </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="esg-new">
+                <h4> {{'MICROSOFR.COMPANY_NAME_ESG_NEW' | translate}} </h4>
+                <hr class="line">
+                <div class="esg-new-box" *ngFor="let esgNew of esgNews">
+                    <img width="100px" [src]="esgNew.imgSrc" alt="">
+                    <div>
+                        <p class="esg-title"> {{esgNew.title}} </p>
+                        <p class="esg-sub-title">{{esgNew.subTitle}}</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="profile">
+            <h4>PROFILE</h4>
+            <hr class="line">
+            <div class="profile-info finance-info" *ngFor="let info of profileInfo">
+                <p> {{info.name}} </p>
+                <p class="profile-information"> {{info.information}} </p>
+            </div>
+            <p>Product Portfolio:</p>
+            <ul>
+                <li>Software: Microsoft Office, Windows, Visual Studio</li>
+                <li>Hardware: Microsoft Lumia smartphones, Microsoft Surface tablet and notebook PCs, Xbox video game
+                    consoles and
+                    controllers</li>
+                <li>IT Services: Azure, Bing, LinkedIn, Microsoft Developer Network, MSN, Microsoft 365, Outlook.com,
+                    Skype</li>
+            </ul>
+            <p>Prominent Competitors:</p>
+            <ul>
+                <li>Software: Oracle, SAP SE, IBM, Cisco</li>
+                <li>Hardware: Apple, Sony, Dell, Samsung</li>
+                <li>IT Services: Google, Facebook, Amazon, VMware</li>
+            </ul>
+        </div>
+    </div>
+</div>

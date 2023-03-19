@@ -1,0 +1,43 @@
+.companies-page {
+  display: flex;
+  justify-content: center;
+  margin-top: 110px;
+  .table td,
+  .table th {
+    border: none;
+  }
+  .table {
+    width: unset;
+    font-size: 20px;
+    text-align: center;
+    width: 80%;
+    thead {
+      tr {
+        background-color: #000;
+        color: #fff;
+        th {
+          padding: 10px;
+          border-bottom: none;
+        }
+        th:nth-child(2) {
+          text-align: left;
+        }
+      }
+    }
+    tbody {
+      color: #fff;
+      tr:nth-child(odd) {
+        background-color: #159427;
+      }
+      tr:nth-child(even) {
+        background-color: #002f6c;
+      }
+      tr:nth-child(1) {
+        cursor: pointer;
+      }
+      td:nth-child(2) {
+        text-align: left;
+      }
+    }
+  }
+}

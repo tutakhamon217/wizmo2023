@@ -1,0 +1,35 @@
+<div class="companies-page">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Symbol</th>
+                <th>Company Name</th>
+                <th>Industry</th>
+                <th>Price ($)</th>
+                <th>ESG Score</th>
+                <th>EPS ($)</th>
+                <th>ESG Risk</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr (click)="onRedirect()">
+                <td>MSFT</td>
+                <td>Microsoft Corporation</td>
+                <td>Tech & Com</td>
+                <td>249.22</td>
+                <td>93/100</td>
+                <td>8.80</td>
+                <td>15 - L</td>
+            </tr>
+            <tr *ngFor="let tableInfo of tableThInformation">
+                <td> {{tableInfo.symbol}} </td>
+                <td> {{tableInfo.companyName}} </td>
+                <td> {{tableInfo.industry}} </td>
+                <td> {{tableInfo.price}} </td>
+                <td> {{tableInfo.esgScore}} </td>
+                <td> {{tableInfo.eps}} </td>
+                <td> {{tableInfo.esgRisk}} </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
